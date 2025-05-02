@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Посібник з програмування равлика RAVLYK</title>
+    <meta name="description" content="Детальний посібник з мови програмування Равлик для дітей. Навчання програмуванню через малювання фігур, від простих команд до складних повторень." />
+    <meta name="keywords" content="равлик, посібник програмування, програмування для дітей, уроки програмування, команди равлик, геометричні фігури кодом" />
+    <meta name="author" content="Равлик" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ravlyk.com/manual.html" />
+    <title>Посібник з програмування Равлик - Навчання для дітей</title>
     <link rel="stylesheet" type="text/css" href="manual-style.css" />
-            <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV58ZGT594"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -23,9 +28,10 @@
     </header>
 
     <div class="container">
-      <div class="nav-buttons">
+      <div class="nav-buttons" style="margin-bottom: 30px; text-align: left;">
         <button
           class="back-to-editor"
+          style="padding: 12px 20px; font-size: 1rem;"
           onclick="window.location.href='index.html'"
         >
           ← Повернутися до редактора
@@ -639,14 +645,6 @@
             </ul>
           </div>
         </div>
-        <div class="nav-buttons guide-section">
-          <button
-            class="back-to-editor main-btn"
-            onclick="window.location.href='index.html'"
-          >
-            ← Повернутися до редактора
-          </button>
-        </div>
 
         <div id="challenges" class="guide-section">
           <h2>Цікаві завдання</h2>
@@ -844,27 +842,26 @@
       </div>
     </div>
     
-    <div class="nav-buttons">
-      <button id="back-to-editor" class="main-btn" style="background-color: #32cd32;" onclick="window.location.href='index.html'">
+    <div class="nav-buttons" style="margin-top: 40px; margin-bottom: 30px; text-align: center;">
+      <button id="back-to-editor" class="main-btn" style="background-color: #32cd32; padding: 15px 25px; font-size: 1.1rem;" onclick="window.location.href='index.html'">
         Повернутися до редактора
       </button>
     </div>
     
     <footer>
       <p>
-        2025 Посібник з програмування равлика RAVLYK. Створено для навчання
+        2024 Посібник з програмування равлика RAVLYK. Створено для навчання
         дітей основам програмування.
       </p>
     </footer>
 
     <script>
-      // Додаємо функціональність для майбутньої інтеграції
+      // Додаємо функціональність для інтеграції
       document.addEventListener("DOMContentLoaded", function () {
         const backBtn = document.getElementById("back-to-editor");
         if (backBtn) {
           backBtn.addEventListener("click", function () {
-            // Тут може бути логіка для переходу назад до редактора
-            console.log("Повернення до редактора");
+            window.location.href = 'index.html';
           });
         }
       });

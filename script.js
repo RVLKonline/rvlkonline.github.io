@@ -139,7 +139,7 @@ function showHelpModal() {
         <li><b>повторити N ( ... )</b> — повторити команди N разів</li>
       </ul>
         <button id="to-manual-btn" onclick="window.location.href='manual.html'">
-          Поcібник з програмування
+          Посібник з програмування
         </button>
       <button id="close-help" class="main-btn">Закрити</button>
     </div>
