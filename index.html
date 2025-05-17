@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Равлик Переїхав!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style>
+        /* Базові стилі з global.css та трохи з main-editor.css для консистенції */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+            background-color: #f0f8ff; /* Світло-блакитний фон, як у global.css */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 3px solid #6a5acd; /* Фіолетовий, як code-box */
+            max-width: 600px;
+        }
+
+        header.main-header {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #4b0082; /* Фіолетовий, як у заголовках */
+        }
+
+        header.main-header h1 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            margin-bottom: 20px;
+        }
+
+        .new-address-link {
+            display: inline-block;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: clamp(1.1rem, 3vw, 1.3rem);
+            font-family: inherit;
+            text-decoration: none;
+            transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: #32cd32; /* Зелений, як кнопка "Запустити" */
+            color: white;
+            margin-top: 15px;
+        }
+
+        .new-address-link:hover {
+            background-color: #28a428;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Стиль для Равлика в тексті */
+        .ravlyk-emoji {
+            font-size: 1.5em; /* Робимо емодзі трохи більшим */
+            vertical-align: -0.1em; /* Трохи опускаємо для кращого вигляду в рядку */
+        }
+
+    </style>
+    <meta http-equiv="refresh" content="10;url=https://ravlyk.org/" />
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1><span class="ravlyk-emoji">🐌</span> Равлик Переїхав на Нову Адресу!</h1>
+        </header>
+        
+        <p>Друзі, чудова новина!</p>
+        <p>Мова програмування "Равлик" тепер знаходиться за новою, зручнішою адресою:</p>
+        
+        <a href="https://ravlyk.org/" class="new-address-link" title="Перейти на новий сайт Равлика">
+            🚀 Перейти на ravlyk.org
+        </a>
+        
+        <p style="margin-top: 25px; font-size: 0.9em;">
+            Вас буде автоматично перенаправлено через 10 секунд...
+        </p>
+        
+        <p class="footer-text">
+            Будь ласка, оновіть свої закладки!
+        </p>
+    </div>
+
+    <footer class="main-footer" style="position: absolute; bottom: 10px; width: 100%; text-align: center; font-size: 0.8em; color: #777;">
+      <p>&copy; <span id="current-year"></span> Мова програмування РАВЛИК | Автор: пан Артем</p>
+    </footer>
+
+    <script>
+      // Встановлення поточного року в футері
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
